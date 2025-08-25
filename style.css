@@ -1,0 +1,11 @@
+:root {
+    /* Cores */
+    --cor-base: #0e0e0e;
+    --cor-secundaria: #131313;
+    --cor-terciaria: #191919;
+    --cor-branca: #e5e5e5;
+}
+
+body {
+    background-color: var(--cor-base);
+}
