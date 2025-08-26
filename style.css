@@ -4,8 +4,435 @@
     --cor-secundaria: #131313;
     --cor-terciaria: #191919;
     --cor-branca: #e5e5e5;
+    --cor-branca-variacao: #d1d1d1;
+
+    /* Fontes */
+    font-family: "Inter Tight", sans-serif;
+}
+
+html, body {
+    background-color: var(--cor-base);
+    margin: 0;
+    height: 100%;
 }
 
 body {
-    background-color: var(--cor-base);
+    display: flex;
+    flex-direction: column;
 }
+
+a {
+    text-decoration: none;
+}
+
+/* */
+
+#header {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+
+}
+
+#main {
+    flex: 6.5;
+    display: flex;
+    justify-content: center;
+}
+
+/* */
+
+#nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 475px;
+    border-radius: 15px;
+    box-shadow: #1b1b1b 0 0 5px;
+    background-color: var(--cor-secundaria);
+}
+
+#items {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.item {
+    margin: 10px;
+    color: var(--cor-branca);
+    border-radius: 10px;
+    font-family: "Inter Tight", sans-serif;
+    padding: 7px 14px;
+}
+
+/* */
+
+#caixa-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-secundaria);
+    height: 775px;
+    width: 1150px;
+    border-radius: 15px;
+    box-shadow: #191919 0 0 5px;
+}
+
+.caixas {
+    background-color: var(--cor-terciaria);
+    border-radius: 25px;
+    color: var(--cor-branca);
+    box-shadow: #272727 0 0 5px;
+}
+
+/* sobre mim */
+
+#caixa-sobre {
+    display: grid;
+    grid-template-columns: 400px 250px 1fr;
+    grid-template-rows: 1fr 150px 1fr;
+    gap: 15px;
+    height: 93%;
+    width: 95%;
+}
+
+#hobbies {
+    grid-column: 1;
+    grid-row: 1 / 4;
+}
+
+#perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 1;
+    background-image: linear-gradient(to bottom, #f3d200, #cc7301, #c55900, #c54500);
+    box-shadow: #d15e00 0 0 5px;
+}
+
+#tecnologias {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#sobre-mim {
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+}
+
+.titulo {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 25px;
+}
+
+.descricao {
+    color: var(--cor-branca);
+    margin: 25px;
+    font-size: 23px;
+}
+
+/* */
+
+.titulo-hobbies {
+    color: var(--cor-branca-variacao);
+    font-weight: bold;
+    font-size: 23px;
+    margin: 40px 0 15px 25px;
+}
+
+.descricao-hobbies {
+    color: var(--cor-branca-variacao);
+    margin: 25px;
+    font-size: 20px;
+}
+
+/* */
+
+#perfil-foto {
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    margin: 0 0 20px 0;
+    box-shadow: #272727 0 0 10px;
+}
+
+#perfil-nome {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* */
+
+.titulo-variacao {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 20px;
+}
+
+#caixa-imagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagens {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+    margin: 10px;
+}
+
+.imagem {
+    height: 65px;
+    width: 65px;
+    margin: 0 20px 0 0;
+}
+
+/* formação */
+
+#caixa-formacao {
+    display: grid;
+    grid-template-columns: 440px 250px 1fr;
+    grid-template-rows: 1fr 150px 1fr;
+    gap: 15px;
+    height: 93%;
+    width: 95%;
+}
+
+#formacao {
+    grid-column: 1 / 1;
+    grid-row: 1 / 4;
+}
+
+#idiomas {
+    grid-column: 2 / 4;
+    grid-row: 1 / 1;
+}
+
+#certificados-cursos {
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+}
+
+/* */
+
+.titulo-faculdade {
+    color: var(--cor-branca);
+    font-weight: bold;
+    font-size: 18px;
+    margin: 40px 0 0 25px;
+}
+
+.subtitulo-formacao {
+    color: var(--cor-branca-variacao);
+    font-weight: bold;
+    font-size: 12px;
+    margin: 10px 0 30px 25px;
+}
+
+#lista-faculdade {
+    color: #bfbfbf;
+}
+
+#descricao-faculdade {
+    color: #bfbfbf;
+    font-size: 18px;
+    margin: 20px 20px 0 25px;
+}
+
+/* */
+
+#caixa-idiomas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+#lista-idiomas-esquerda {
+    list-style: none;
+    padding: 0;
+    margin: 25px;
+}
+
+#lista-idiomas-direita {
+    list-style: none;
+    padding: 0;
+    margin: -35px 0 0 40px;
+}
+
+.idioma {
+    color: var(--cor-branca-variacao);
+    font-size: 25px;
+    margin: 0 0 30px 0;
+}
+
+/* */
+
+#caixa-cert-cursos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.cert-curso {
+    margin: 0 20px 0 20px;
+}
+
+.lista-cert-curso {
+    padding: 0 0 0 20px;
+    font-size: 0.67rem;
+}
+
+.titulo-cert-cursos {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* */
+
+#caixa-portfolio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    height: 93%;
+    width: 95%;
+}
+
+.projetos {
+    display: grid;
+    grid-template-columns: 620px 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.projeto {
+    grid-column: 2 / 4;
+    grid-row: 1 / 1;
+}
+
+.imagem-projeto {
+    grid-column: 1 / 1;
+    grid-row: 1 / 3;
+    height: 100%;
+    width: 100%;
+}
+
+.link-projeto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.github-projeto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.icone {
+    height: 30px;
+    width: 30px;
+    padding: 3px;
+    margin: 15px -10px 0 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #1c1c1c;
+}
+
+.icone-titulo {
+    display: flex;
+}
+
+.icones-link {
+    height: 75px;
+    width: 75px;
+}
+
+.descricao-projeto {
+    margin: 0 10px 10px 20px;
+    font-size: 11px;
+}
+
+/* */
+
+#caixa-principal-contato {
+    display: flex;
+    justify-content: center;
+    height: 775px;
+    width: 1150px;
+    border-radius: 15px;
+}
+
+#caixa-contato {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 55px;
+    height: 80%;
+    width: 95%;
+}
+
+#github-email {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+
+#github {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+}
+
+#email {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+}
+
+/* */
+
+#formularios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 20px;
+}
+
+#formulario-esquerda {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+}
+
+#formulario-direita {
+    display: grid;
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+}
+
+#formulario {
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--cor-branca);
+}
+
+#input-mensagem {
+
+}
+

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfólio pessoal de Guilherme de Souza de Oliveira.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="media/icon.ico">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
@@ -11,45 +14,62 @@
 </head>
 <body>
 
-<header> <!-- Separação - Topo -->
+<header id="header"> <!-- Separação - Topo -->
 
-    <nav> <!-- Caixa de navegação -->
-        <ul> <!-- Caixa de Items -->
-            <li></li> <!-- Item - Sobre mim -->
-            <li></li> <!-- Item - Formação -->
-            <li></li> <!-- Item - Portfólio -->
-            <li></li> <!-- Item - Contato -->
+    <nav id="nav"> <!-- Caixa de navegação -->
+        <ul id="items"> <!-- Caixa de Items -->
+            <li><a href="sobre.html" class="item">Sobre mim</a></li> <!-- Item - Sobre mim -->
+            <li><a href="formacao.html" class="item">Formação</a></li> <!-- Item - Formação -->
+            <li><a href="portfolio.html" class="item" style="background-color: var(--cor-terciaria); font-weight: bold">Portfólio</a></li> <!-- Item - Portfólio -->
+            <li><a href="contato.html" class="item">Contato</a></li> <!-- Item - Contato -->
         </ul>
     </nav>
 
 </header>
 
-<main>  <!-- Separação - Principal -->
+<main id="main">  <!-- Separação - Principal -->
 
-    <div> <!-- Caixa principal -->
-        <div> <!-- Primeiro projeto -->
-            <img src="#" alt="#"> <!-- Imagem do projeto -->
+    <div id="caixa-principal"> <!-- Caixa principal -->
+        <div id="caixa-portfolio">
+            <div class="projetos"> <!-- Primeiro projeto -->
+                <img src="media/descontou.png" alt="Captura de tela do projeto 'Descontou+'" class="caixas imagem-projeto"> <!-- Imagem do projeto -->
 
-            <div> <!-- Descontou+ -->
-                <div></div> <!-- Título -->
-                <div></div> <!-- Descrição -->
+                <div class="caixas projeto"> <!-- Descontou+ -->
+                    <div class="icone-titulo"> <!-- Ícone e Título -->
+                        <img src="media/project-icon.svg" alt="Ícone projeto" class="icone">
+                        <div class="titulo-variacao">Descontou+</div>
+                    </div>
+                    <div class="descricao-projeto">O Descontou+ é um site desenvolvido como protótipo de um clube de descontos online. O objetivo do projeto é simular uma plataforma onde usuários podem se inscrever gratuitamente para receber promoções exclusivas em produtos e serviços. O site conta com páginas estruturadas em HTML, estilização em CSS e interatividade em JavaScript, incluindo formulário de inscrição, área de depoimentos, seção de perguntas frequentes e design responsivo.</div> <!-- Descrição -->
+                </div>
+
+                <a href="#" class="caixas link-projeto"> <!-- Link do site -->
+                    <img src="media/link-icon.svg" alt="" class="icones-link">
+                </a>
+                <a href="#" class="caixas github-projeto"> <!-- GitHub do projeto -->
+                    <img src="media/github-icon.svg" alt="" class="icones-link">
+                </a>
             </div>
 
-            <div></div> <!-- Link do site -->
-            <div></div> <!-- GitHub do projeto -->
-        </div>
+            <div class="projetos"> <!-- Segundo projeto -->
+                <img src="media/to-do-list.png" alt="Captura de tela do projeto 'To-do List'" class="caixas imagem-projeto"> <!-- Imagem do projeto -->
 
-        <div> <!-- Segundo projeto -->
-            <img src="#" alt="#"> <!-- Imagem do projeto -->
+                <div class="caixas projeto"> <!-- To-do List -->
+                    <div class="icone-titulo"> <!-- Ícone e Título -->
+                        <img src="media/project-icon.svg" alt="Ícone projeto" class="icone">
+                        <div class="titulo-variacao">To-do List</div>
+                    </div>
+                    <div class="descricao-projeto">O To-do List é uma aplicação web desenvolvida para organizar tarefas de forma simples e eficiente. O usuário pode adicionar novas tarefas com título e descrição, marcar como concluídas, editar o status por meio de checkboxes e excluir quando desejar. O sistema utiliza localStorage para salvar os dados, garantindo que as informações permaneçam mesmo após fechar o navegador. O projeto foi implementado com HTML, CSS e JavaScript, com foco em boas práticas e usabilidade.</div> <!-- Descrição -->
+                </div>
 
-            <div> <!-- To-do List -->
-                <div></div> <!-- Título -->
-                <div></div> <!-- Descrição -->
+                <a href="#" class="caixas link-projeto"> <!-- Link do site -->
+                    <img src="media/link-icon.svg" alt="Ícone link" class="icones-link">
+                </a>
+                <a href="#" class="caixas github-projeto"> <!-- GitHub do projeto -->
+                    <img src="media/github-icon.svg" alt="Ícone GitHub" class="icones-link">
+                </a>
             </div>
-
-            <div></div> <!-- Link do site -->
-            <div></div> <!-- GitHub do projeto -->
         </div>
+
     </div>
 
 </main>

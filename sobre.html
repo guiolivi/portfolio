@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfólio pessoal de Guilherme de Souza de Oliveira.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="media/icon.ico">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
@@ -11,67 +14,70 @@
 </head>
 <body>
 
-<header> <!-- Separação - Topo -->
+<header id="header"> <!-- Separação - Topo -->
 
-    <nav> <!-- Caixa de navegação -->
-        <ul> <!-- Caixa de Items -->
-            <li></li> <!-- Item - Sobre mim -->
-            <li></li> <!-- Item - Formação -->
-            <li></li> <!-- Item - Portfólio -->
-            <li></li> <!-- Item - Contato -->
+    <nav id="nav"> <!-- Caixa de navegação -->
+        <ul id="items"> <!-- Caixa de Items -->
+            <li><a href="sobre.html" class="item" style="background-color: var(--cor-terciaria); font-weight: bold">Sobre mim</a></li> <!-- Item - Sobre mim -->
+            <li><a href="formacao.html" class="item">Formação</a></li> <!-- Item - Formação -->
+            <li><a href="portfolio.html" class="item">Portfólio</a></li> <!-- Item - Portfólio -->
+            <li><a href="contato.html" class="item">Contato</a></li> <!-- Item - Contato -->
         </ul>
     </nav>
 
 </header>
 
-<main>  <!-- Separação - Principal -->
+<main id="main">  <!-- Separação - Principal -->
 
-    <div> <!-- Caixa principal -->
-        <div> <!-- Hobbies -->
-            <div></div> <!-- Título - Hobbies -->
+    <div id="caixa-principal"> <!-- Caixa principal -->
+        <div id="caixa-sobre">
+            <div class="caixas" id="hobbies"> <!-- Hobbies -->
+                <div class="titulo">Hobbies</div> <!-- Título - Hobbies -->
 
-            <div> <!-- Caixa - Aprendizagem de Idiomas -->
-                <div></div> <!-- Título -->
-                <div></div> <!-- Descrição -->
+                <div> <!-- Caixa - Aprendizagem de Idiomas -->
+                    <div class="titulo-hobbies">Aprendizagem de Idiomas</div> <!-- Título -->
+                    <div class="descricao-hobbies">Tenho um grande interesse em aprender novas línguas.</div> <!-- Descrição -->
+                </div>
+
+                <div> <!-- Caixa - Artes Marciais -->
+                    <div class="titulo-hobbies">Artes Marciais</div> <!-- Título -->
+                    <div class="descricao-hobbies">Gosto de praticar atividades físicas e artes marciais como Muay Thai.</div> <!-- Descrição -->
+                </div>
+
+                <div> <!-- Caixa - Desenvolvimento Web -->
+                    <div class="titulo-hobbies">Desenvolvimento Web</div> <!-- Título -->
+                    <div class="descricao-hobbies">Tenho bastante interesse em programação, principalmente na área de desenvolvimento web.</div> <!-- Descrição -->
+                </div>
+
+                <div> <!-- Caixa - Leitura -->
+                    <div class="titulo-hobbies">Leitura</div> <!-- Título -->
+                    <div class="descricao-hobbies">Adoro ler livros no meu tempo livre, principalmente livros relacionados à história e filosofia.</div> <!-- Descrição -->
+                </div>
             </div>
 
-            <div> <!-- Caixa - Artes Marciais -->
-                <div></div> <!-- Título -->
-                <div></div> <!-- Descrição -->
+            <div class="caixas" id="perfil"> <!-- Foto + Nome -->
+                <img src="https://tr.rbxcdn.com/180DAY-f59152f1885531ae4bc5454cd529beb4/420/420/Hat/Webp/noFilter" alt="Foto de perfil" id="perfil-foto"> <!-- Foto -->
+                <div id="perfil-nome">Guilherme Oliveira</div> <!-- Nome -->
             </div>
 
-            <div> <!-- Caixa - Desenvolvimento Web -->
-                <div></div> <!-- Título -->
-                <div></div> <!-- Descrição -->
+            <div class="caixas" id="tecnologias"> <!-- Tecnologias -->
+                <div class="titulo-variacao">Tecnologias que utilizo</div> <!-- Título - Tecnologias que utilizo -->
+                <div id="caixa-imagens">
+                    <div id="imagens"> <!-- Imagens // Usar grid para organizar imagens -->
+                        <img src="media/html-icon.svg" alt="HTML" class="imagem">
+                        <img src="media/css-icon.svg" alt="CSS" class="imagem">
+                        <img src="media/javascript-icon.svg" alt="JavaScript" class="imagem">
+                        <img src="media/react-icon.svg" alt="React" class="imagem">
+                        <img src="media/java-icon.svg" alt="Java" class="imagem">
+                        <img src="media/mysql-icon.svg" alt="MySQL" class="imagem">
+                    </div>
+                </div>
             </div>
 
-            <div> <!-- Caixa - Leitura -->
-                <div></div> <!-- Título -->
-                <div></div> <!-- Descrição -->
+            <div class="caixas" id="sobre-mim"> <!-- Sobre mim -->
+                <div class="titulo">Sobre mim</div> <!-- Título - Sobre mim -->
+                <div class="descricao">Meu nome é Guilherme, tenho 18 anos e sou do Rio de Janeiro. Atualmente curso Engenharia de Software na UNINTER (Centro Universitário Internacional). Estou aprendendo back-end com Java e pretendo me especializar em desenvolvimento web, sempre buscando evoluir minhas habilidades técnicas e aplicar o que aprendo em projetos práticos.</div> <!-- Descrição -->
             </div>
-        </div>
-
-        <div> <!-- Foto + Nome -->
-            <img src="#" alt="#"> <!-- Foto -->
-            <div></div> <!-- Nome -->
-        </div>
-
-        <div> <!-- Tecnologias -->
-            <div></div> <!-- Título - Tecnologias que utilizo -->
-
-            <div> <!-- Imagens // Usar grid para organizar imagens -->
-                <img src="#" alt="#">
-                <img src="#" alt="#">
-                <img src="#" alt="#">
-                <img src="#" alt="#">
-                <img src="#" alt="#">
-                <img src="#" alt="#">
-            </div>
-        </div>
-
-        <div> <!-- Sobre mim -->
-            <div></div> <!-- Título - Sobre mim -->
-            <div></div> <!-- Descrição -->
         </div>
     </div>
 

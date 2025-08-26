@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+	<title>project-icon</title>
+	<style>
+		.s0 { fill: #ffffff } 
+	</style>
+	<g id="Page-1">
+		<g id="Combined-Shape">
+			<path fill-rule="evenodd" class="s0" d="m400 53.7l300 173.2v346.4l-300 173.2-300-173.2v-346.4zm-233.3 246.3v234.8l200 115.5v-234.8zm466.6 0l-200 115.4v234.8l200-115.4zm-233.3-169.4l-196.7 113.6 196.7 113.5 196.7-113.5z"/>
+		</g>
+	</g>
+</svg>

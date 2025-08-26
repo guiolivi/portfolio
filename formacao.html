@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfólio pessoal de Guilherme de Souza de Oliveira.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="media/icon.ico">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
@@ -11,77 +14,125 @@
 </head>
 <body>
 
-<header> <!-- Separação - Topo -->
+<header id="header"> <!-- Separação - Topo -->
 
-    <nav> <!-- Caixa de navegação -->
-        <ul> <!-- Caixa de Items -->
-            <li></li> <!-- Item - Sobre mim -->
-            <li></li> <!-- Item - Formação -->
-            <li></li> <!-- Item - Portfólio -->
-            <li></li> <!-- Item - Contato -->
+    <nav id="nav"> <!-- Caixa de navegação -->
+        <ul id="items"> <!-- Caixa de Items -->
+            <li><a href="sobre.html" class="item">Sobre mim</a></li> <!-- Item - Sobre mim -->
+            <li><a href="formacao.html" class="item" style="background-color: var(--cor-terciaria); font-weight: bold">Formação</a></li> <!-- Item - Formação -->
+            <li><a href="portfolio.html" class="item">Portfólio</a></li> <!-- Item - Portfólio -->
+            <li><a href="contato.html" class="item">Contato</a></li> <!-- Item - Contato -->
         </ul>
     </nav>
 
 </header>
 
-<main>  <!-- Separação - Principal -->
+<main id="main">  <!-- Separação - Principal -->
 
-    <div> <!-- Caixa principal -->
-        <div> <!-- Formação Acadêmica -->
-            <div></div> <!-- Título - Formação Acadêmica -->
+    <div id="caixa-principal"> <!-- Caixa principal -->
+        <div id="caixa-formacao">
+            <div class="caixas" id="formacao"> <!-- Formação Acadêmica -->
+                <div class="titulo">Formação Acadêmica</div> <!-- Título - Formação Acadêmica -->
 
-            <div> <!-- Faculdade -->
-                <div></div> <!-- Título -->
-                <div></div> <!-- Subtítulo -->
-                <div></div> <!-- Lista -->
-                <div></div> <!-- Descrição -->
+                <div> <!-- Faculdade -->
+                    <div class="titulo-faculdade">Bacharelado em Engenharia de Software</div> <!-- Título -->
+                    <div class="subtitulo-formacao">UNINTER (Centro Internacional Universitário) • Em andamento - 2028</div> <!-- Subtítulo -->
+                    <ul id="lista-faculdade"> <!-- Lista -->
+                        <li>Desenvolvimento Web (HTML, CSS, JavaScript)</li>
+                        <li>Algoritmos e Estruturas de Dados</li>
+                        <li>Arquitetura de Software e Padrões de Design</li>
+                        <li>Fundamentos de Inteligência Artificial</li>
+                        <li>Bancos de Dados Relacionais</li>
+                        <li>Lógica de Programação com Python</li>
+                    </ul>
+                    <div id="descricao-faculdade">Cursando Engenharia de Software na UNINTER, venho explorando de forma prática conceitos de desenvolvimento web, lógica de programação e design de sistemas. Ao longo da graduação, tenho aplicado meus conhecimentos em projetos que integram front-end, back-end e fundamentos de inteligência artificial, construindo uma base sólida para atuação profissional na área de tecnologia.</div> <!-- Descrição -->
+                </div>
+
+                <div> <!-- Ensino Médio -->
+                    <div class="titulo-faculdade">Ensino Médio</div> <!-- Título -->
+                    <div class="subtitulo-formacao">CIEP 351 Ministro Salgado Filho • 2018 - 2025</div> <!-- Subtítulo -->
+                </div>
             </div>
 
-            <div> <!-- Ensino Médio -->
-                <div></div> <!-- Título -->
-                <div></div> <!-- Subtítulo -->
+            <div class="caixas" id="idiomas"> <!-- Idiomas -->
+                <div class="titulo">Idiomas</div> <!-- Título - Idiomas -->
+
+                <div id="caixa-idiomas">
+                    <ul id="lista-idiomas-esquerda"> <!-- Idiomas - Parte Esquerda // Textos com propriedades para margem -->
+                        <li class="idioma">Português (Nativo)</li>
+                        <li class="idioma">Inglês (Proficiente)</li>
+                    </ul>
+                    <ul id="lista-idiomas-direita"> <!-- Idiomas - Parte Direita // Textos com propriedades para margem -->
+                        <li class="idioma">Japonês (Intermediário)</li>
+                        <li class="idioma">Espanhol (Básico)</li>
+                        <li class="idioma">Francês (Básico)</li>
+                    </ul>
+                </div>
             </div>
-        </div>
 
-        <div> <!-- Idiomas -->
-            <div></div> <!-- Título - Idiomas -->
+            <div class="caixas" id="certificados-cursos"> <!-- Certificados e Cursos -->
+                <div class="titulo-variacao">Certificados e Cursos</div> <!-- Título - Certificados e Cursos -->
 
-            <div></div> <!-- Idiomas - Parte Esquerda // Textos com propriedades para margem -->
-            <div></div> <!-- Idiomas - Parte Direita // Textos com propriedades para margem -->
-        </div>
+                <div id="caixa-cert-cursos"> <!-- Caixa - Certificados e Cursos -->
+                    <div class="cert-curso"> <!-- Back-end com Java -->
+                        <div class="titulo-cert-cursos">Back-End com Java (Santander)</div> <!-- Título -->
+                        <ul class="lista-cert-curso"> <!-- Lista -->
+                            <li>Implementação de APIs RESTful em Java</li>
+                            <li>Gerenciamento de banco de dados e SQL</li>
+                            <li>Manipulação de arquivos e tratamento de exceções</li>
+                            <li>Estruturas de dados e algoritmos aplicados ao back-end</li>
+                        </ul>
+                    </div>
 
-        <div> <!-- Certificados e Cursos -->
-            <div></div> <!-- Título - Certificados e Cursos -->
+                    <div class="cert-curso"> <!-- Desenvolvedor Python -->
+                        <div class="titulo-cert-cursos">Desenvolvedor Python (Suzano)</div> <!-- Título -->
+                        <ul class="lista-cert-curso"> <!-- Lista -->
+                            <li>Criação de scripts e automações com Python</li>
+                            <li>Uso de funções, loops e condicionais em projetos reais</li>
+                            <li>Depuração e resolução de bugs em códigos Python</li>
+                            <li>Manipulação de dados e integração com bibliotecas externas</li>
+                        </ul>
+                    </div>
 
-            <div> <!-- Caixa - Certificados e Cursos -->
-                <div> <!-- Back-end com Java -->
-                    <div></div> <!-- Título -->
-                    <div></div> <!-- Lista -->
-                </div>
+                    <div class="cert-curso"> <!-- GitHub Foundations -->
+                        <div class="titulo-cert-cursos">GitHub Foundations (GitHub)</div> <!-- Título -->
+                        <ul class="lista-cert-curso"> <!-- Lista -->
+                            <li>Controle de versão com Git e fluxos de trabalho colaborativos</li>
+                            <li>Criação e gerenciamento de branches, pull requests e merges</li>
+                            <li>Rastreamento de issues e gerenciamento de projetos</li>
+                            <li>Introdução a CI/CD e automação usando GitHub Actions</li>
+                        </ul>
+                    </div>
 
-                <div> <!-- Desenvolvedor Python -->
-                    <div></div> <!-- Título -->
-                    <div></div> <!-- Lista -->
-                </div>
+                    <div class="cert-curso"> <!-- Japonês Básico -->
+                        <div class="titulo-cert-cursos">Japonês Básico (Irodori)</div> <!-- Título -->
+                        <ul class="lista-cert-curso"> <!-- Lista -->
+                            <li>Aprendizado de alfabetos Hiragana e Katakana</li>
+                            <li>Construção de frases simples para comunicação cotidiana</li>
+                            <li>Vocabulário básico para situações do dia a dia</li>
+                            <li>Compreensão de expressões formais e informais</li>
+                        </ul>
+                    </div>
 
-                <div> <!-- GitHub Foundations -->
-                    <div></div> <!-- Título -->
-                    <div></div> <!-- Lista -->
-                </div>
+                    <div class="cert-curso"> <!-- Inglês Avançado -->
+                        <div class="titulo-cert-cursos">Inglês Avançado (UBEST)</div> <!-- Título -->
+                        <ul class="lista-cert-curso"> <!-- Lista -->
+                            <li>Leitura e interpretação de textos complexos</li>
+                            <li>Escrita formal e e-mails profissionais</li>
+                            <li>Conversação fluente sobre temas diversos</li>
+                            <li>Ampliação de vocabulário técnico e acadêmico</li>
+                        </ul>
+                    </div>
 
-                <div> <!-- Japonês Básico -->
-                    <div></div> <!-- Título -->
-                    <div></div> <!-- Lista -->
-                </div>
-
-                <div> <!-- Inglês Avançado -->
-                    <div></div> <!-- Título -->
-                    <div></div> <!-- Lista -->
-                </div>
-
-                <div> <!-- Inglês Proficiente -->
-                    <div></div> <!-- Título -->
-                    <div></div> <!-- Lista -->
+                    <div class="cert-curso"> <!-- Inglês Proficiente -->
+                        <div class="titulo-cert-cursos">Inglês Proficiente (EF SET)</div> <!-- Título -->
+                        <ul class="lista-cert-curso"> <!-- Lista -->
+                            <li>Compreensão auditiva de materiais avançados</li>
+                            <li>Produção textual clara e coesa em nível acadêmico</li>
+                            <li>Uso de gramática avançada em contextos variados</li>
+                            <li>Capacidade de comunicação precisa em ambientes profissionais</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

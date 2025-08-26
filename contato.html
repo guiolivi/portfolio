@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfólio pessoal de Guilherme de Souza de Oliveira.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="media/icon.ico">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
@@ -11,42 +14,46 @@
 </head>
 <body>
 
-<header> <!-- Separação - Topo -->
+<header id="header"> <!-- Separação - Topo -->
 
-    <nav> <!-- Caixa de navegação -->
-        <ul> <!-- Caixa de Items -->
-            <li></li> <!-- Item - Sobre mim -->
-            <li></li> <!-- Item - Formação -->
-            <li></li> <!-- Item - Portfólio -->
-            <li></li> <!-- Item - Contato -->
+    <nav id="nav"> <!-- Caixa de navegação -->
+        <ul id="items"> <!-- Caixa de Items -->
+            <li><a href="sobre.html" class="item">Sobre mim</a></li> <!-- Item - Sobre mim -->
+            <li><a href="formacao.html" class="item">Formação</a></li> <!-- Item - Formação -->
+            <li><a href="portfolio.html" class="item">Portfólio</a></li> <!-- Item - Portfólio -->
+            <li><a href="contato.html" class="item" style="background-color: var(--cor-terciaria); font-weight: bold">Contato</a></li> <!-- Item - Contato -->
         </ul>
     </nav>
 
 </header>
 
-<main>  <!-- Separação - Principal -->
+<main id="main">  <!-- Separação - Principal -->
 
-    <div> <!-- Caixa principal (Invisível) -->
-        <div> <!-- Topo - Perfil do GitHub -->
-            <div></div> <!-- Título - Perfil do GitHub -->
-            <img src="#" alt="#"> <!-- Imagem - GitHub -->
-        </div>
+    <div id="caixa-principal-contato"> <!-- Caixa principal (Invisível) -->
+        <div id="caixa-contato">
+            <div id="github-email">
+                <div class="caixas" id="github"> <!-- Topo - Perfil do GitHub -->
+                    <div>Perfil do GitHub</div> <!-- Título - Perfil do GitHub -->
+                    <img src="#" alt="#"> <!-- Imagem - GitHub -->
+                </div>
 
-        <div> <!-- Topo - E-mail profissional  -->
-            <div></div> <!-- Caixa - E-mail profissional -->
-        </div>
-
-        <div> <!-- Base - Formulário para Contato -->
-            <div></div> <!-- Título - Formulário para Contato -->
-
-            <div> <!-- Parte Esquerda -->
-                <div></div> <!-- Nome -->
-                <div></div> <!-- E-mail -->
-                <div></div> <!-- Botão Enviar -->
+                <div class="caixas" id="email"> <!-- Topo - E-mail profissional  -->
+                    <div>asd</div> <!-- Caixa - E-mail profissional -->
+                </div>
             </div>
 
-            <div> <!-- Parte Direita -->
-                <div></div> <!-- Mensagem -->
+            <div id="formularios">
+                <div id="formulario-esquerda"> <!-- Parte Esquerda -->
+                    <div id="formulario">Formulário para Contato</div> <!-- Título - Formulário para Contato -->
+
+                    <div class="caixas" id="input-nome">Nome</div> <!-- Nome -->
+                    <div class="caixas" id="input-email">E-mail</div> <!-- E-mail -->
+                    <div class="caixas" id="input-enviar">Enviar</div> <!-- Botão Enviar -->
+                </div>
+
+                <div id="formulario-direita"> <!-- Parte Direita -->
+                    <div class="caixas" id="input-mensagem">Mensagem</div> <!-- Mensagem -->
+                </div>
             </div>
         </div>
     </div>
