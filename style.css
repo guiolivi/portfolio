@@ -28,7 +28,7 @@ a {
 }
 
 img {
-    cursor: default;
+    pointer-events: none;
 }
 
 /* Header e Main */
@@ -98,7 +98,7 @@ img {
 
 /* Animações */
 
-.animacao-hover:hover {
+.box-hover:hover {
     transition: 1s ease;
     box-shadow: #7a7a7a 0 0 4px;
     transform: scale(101%);
