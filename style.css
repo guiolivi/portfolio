@@ -577,6 +577,7 @@ img {
     margin: 0 0 10px 15px;
     border: 0;
     outline: 0;
+    scrollbar-width: none;
     font-size: 15px;
     font-family: "Inter Tight", sans-serif;
     color: var(--cor-branca);
