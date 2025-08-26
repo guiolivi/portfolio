@@ -21,7 +21,7 @@
             <li><a href="index.html" class="item">Sobre mim</a></li> <!-- Item - Sobre mim -->
             <li><a href="formacao.html" class="item">Formação</a></li> <!-- Item - Formação -->
             <li><a href="portfolio.html" class="item">Portfólio</a></li> <!-- Item - Portfólio -->
-            <li><a href="contato.html" class="item" style="background-color: var(--cor-terciaria); font-weight: bold">Contato</a></li> <!-- Item - Contato -->
+            <li><a href="contato.html" class="item" style="background-color: var(--cor-terciaria); color: var(--cor-branca)">Contato</a></li> <!-- Item - Contato -->
         </ul>
     </nav>
 
@@ -32,13 +32,17 @@
     <div id="caixa-principal-contato"> <!-- Caixa principal (Invisível) -->
         <div id="caixa-contato">
             <div id="github-email">
-                <div class="caixas" id="github"> <!-- Topo - Perfil do GitHub -->
-                    <div>Perfil do GitHub</div> <!-- Título - Perfil do GitHub -->
-                    <img src="#" alt="#"> <!-- Imagem - GitHub -->
-                </div>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/guiolivi" class="caixas" id="github"> <!-- Topo - Perfil do GitHub -->
+                    <div class="titulo">Perfil do GitHub</div> <!-- Título - Perfil do GitHub -->
+                    <div id="descricao-github">Veja meus outros repositórios</div> <!-- Descrição - Perfil do GitHub -->
+                    <img src="media/github-icon.svg" alt="Ícone GitHub" id="perfil-github"> <!-- Imagem - GitHub -->
+                </a>
 
                 <div class="caixas" id="email"> <!-- Topo - E-mail profissional  -->
-                    <div>asd</div> <!-- Caixa - E-mail profissional -->
+                    <a href="mailto:guilhermeoliveirfm@gmail.com" id="caixa-email"> <!-- Caixa - E-mail profissional -->
+                        <img src="media/email-icon.svg" alt="Ícone E-mail" id="icone-email">
+                        <div id="enviar-email">guilhermeoliveirfm@gmail.com</div>
+                    </a>
                 </div>
             </div>
 
@@ -46,13 +50,22 @@
                 <div id="formulario-esquerda"> <!-- Parte Esquerda -->
                     <div id="formulario">Formulário para Contato</div> <!-- Título - Formulário para Contato -->
 
-                    <div class="caixas" id="input-nome">Nome</div> <!-- Nome -->
-                    <div class="caixas" id="input-email">E-mail</div> <!-- E-mail -->
-                    <div class="caixas" id="input-enviar">Enviar</div> <!-- Botão Enviar -->
+                    <div class="caixas" id="campo-nome"> <!-- Nome -->
+                        <label for="input-nome" id="label-nome">Nome</label>
+                        <input type="text" id="input-nome" maxlength="64" placeholder="Digite seu nome completo" required>
+                    </div>
+                    <div class="caixas" id="campo-email"> <!-- E-mail -->
+                        <label for="input-email" id="label-email">E-mail</label>
+                        <input type="email" id="input-email" maxlength="64" placeholder="exemplo@email.com" required>
+                    </div>
+                    <button class="caixas" id="campo-enviar">Enviar</button> <!-- Botão Enviar -->
                 </div>
 
                 <div id="formulario-direita"> <!-- Parte Direita -->
-                    <div class="caixas" id="input-mensagem">Mensagem</div> <!-- Mensagem -->
+                    <div class="caixas" id="campo-mensagem"> <!-- Mensagem -->
+                        <label for="input-mensagem" id="label-mensagem">Mensagem</label>
+                        <textarea id="input-mensagem" maxlength="5000" placeholder="Insira sua mensagem"></textarea>
+                    </div>
                 </div>
             </div>
         </div>

@@ -25,6 +25,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    pointer-events: none;
+}
+
 /* */
 
 #header {
@@ -63,7 +67,7 @@ a {
 
 .item {
     margin: 10px;
-    color: var(--cor-branca);
+    color: #a8a8a8;
     border-radius: 10px;
     font-family: "Inter Tight", sans-serif;
     padding: 7px 14px;
@@ -201,7 +205,7 @@ a {
 #caixa-formacao {
     display: grid;
     grid-template-columns: 440px 250px 1fr;
-    grid-template-rows: 1fr 150px 1fr;
+    grid-template-rows: 225px 200px 1fr;
     gap: 15px;
     height: 93%;
     width: 95%;
@@ -259,13 +263,13 @@ a {
 #lista-idiomas-esquerda {
     list-style: none;
     padding: 0;
-    margin: 25px;
+    margin: 15px 25px 30px 25px;
 }
 
 #lista-idiomas-direita {
     list-style: none;
     padding: 0;
-    margin: -35px 0 0 40px;
+    margin: -45px 0 0 40px;
 }
 
 .idioma {
@@ -288,7 +292,7 @@ a {
 
 .lista-cert-curso {
     padding: 0 0 0 20px;
-    font-size: 0.67rem;
+    font-size: 0.7rem;
 }
 
 .titulo-cert-cursos {
@@ -393,11 +397,18 @@ a {
 }
 
 #github {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     grid-column: 1 / 1;
     grid-row: 1 / 1;
 }
 
 #email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-column: 2 / 2;
     grid-row: 1 / 1;
 }
@@ -432,7 +443,131 @@ a {
     color: var(--cor-branca);
 }
 
-#input-mensagem {
+/* */
 
+#perfil-github {
+    height: 120px;
+    width: 120px;
+    margin: 0 0 20px 0;
 }
 
+#descricao-github {
+    color: var(--cor-branca-variacao);
+    font-weight: bold;
+    margin: -20px 0 20px 0;
+    font-size: 20px;
+}
+
+/* */
+
+#caixa-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e2e2e;
+    border-radius: 15px;
+    box-shadow: #272727 0 0 5px;
+    padding: 15px 30px 15px 30px;
+    height: 25px;
+    width: 250px;
+}
+
+#icone-email {
+    float: left;
+    margin: 0 10px 0 0;
+    height: 30px;
+    width: 30px;
+}
+
+#enviar-email {
+    color: var(--cor-branca);
+    font-size: 17px;
+}
+
+/* */
+
+#campo-nome {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+#label-nome {
+    margin: 10px 0 10px 15px;
+}
+
+#input-nome {
+    height: 20px;
+    width: 510px;
+    margin: -7px 0 10px 15px;
+    font-family: "Inter Tight", sans-serif;
+    color: var(--cor-branca);
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+/* */
+
+#campo-email {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+#label-email {
+    margin: 10px 0 10px 15px;
+}
+
+#input-email {
+    height: 20px;
+    width: 510px;
+    margin: -7px 0 10px 15px;
+    font-family: "Inter Tight", sans-serif;
+    color: var(--cor-branca);
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+/* */
+
+#campo-enviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    color: var(--cor-branca);
+    font-size: 17px;
+    font-family: "Inter Tight", sans-serif;
+}
+
+/* */
+
+#campo-mensagem {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+#label-mensagem {
+    margin: 10px 0 10px 15px;
+}
+
+#input-mensagem {
+    height: 250px;
+    width: 500px;
+    margin: 0 0 10px 15px;
+    border: 0;
+    outline: 0;
+    font-size: 15px;
+    font-family: "Inter Tight", sans-serif;
+    color: var(--cor-branca);
+    overflow: scroll;
+    resize: none;
+    background-color: transparent;
+}
