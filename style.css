@@ -19,6 +19,8 @@ html, body {
 }
 
 body {
+    opacity: 0;
+    transition: opacity 0.5s;
     display: flex;
     flex-direction: column;
 }
@@ -67,7 +69,12 @@ img {
     padding: 0;
 }
 
+.item-caixa {
+    transition: 0.25s ease;
+}
+
 .item {
+    cursor: pointer;
     margin: 10px;
     color: #a8a8a8;
     border-radius: 10px;
@@ -99,9 +106,28 @@ img {
 /* Animações */
 
 .box-grow:hover {
-    transition: 1s ease;
     box-shadow: #7a7a7a 0 0 4px;
     transform: scale(101%);
+}
+
+.box-items:hover {
+    opacity: 65%;
+}
+
+.box-items:active {
+    transform: scale(96%);
+}
+
+.box-button:hover {
+    transition: 0.15s ease;
+    box-shadow: #737373 0 1px 4px;
+    transform: translateY(-2px);
+}
+
+.box-button:active {
+    transition: 0.15s ease;
+    box-shadow: inset #0e0e0e 0 0 10px;
+    transform: translateY(0);
 }
 
 /* Sobre mim - Divisões */
