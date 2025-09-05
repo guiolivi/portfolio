@@ -19,8 +19,6 @@ html, body {
 }
 
 body {
-    opacity: 0;
-    transition: opacity 0.5s;
     display: flex;
     flex-direction: column;
 }
@@ -45,6 +43,8 @@ img {
 }
 
 #main {
+    opacity: 0;
+    transition: ease 0.3s;
     flex: 6.5;
     display: flex;
     justify-content: center;
