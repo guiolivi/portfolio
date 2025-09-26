@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="media/icon.ico">
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
     <title>Guilherme Oliveira</title>
 </head>
 <body>
@@ -17,10 +18,10 @@
 
     <nav id="nav"> <!-- Caixa de navegação -->
         <ul id="items"> <!-- Caixa de Items -->
-            <li><a href="index.html" class="item" style="background-color: var(--cor-terciaria); color: var(--cor-branca)">Sobre mim</a></li>
-            <li><a href="formacao.html" class="item">Formação</a></li>
-            <li><a href="portfolio.html" class="item">Portfólio</a></li>
-            <li><a href="contato.html" class="item">Contato</a></li>
+            <li class="item-caixa box-items"><span onclick="transicaoPagina('index.html')" class="item" style="background-color: var(--cor-terciaria); color: var(--cor-branca)">Sobre mim</span></li>
+            <li class="item-caixa box-items"><span onclick="transicaoPagina('formacao.html')" class="item">Formação</span></li>
+            <li class="item-caixa box-items"><span onclick="transicaoPagina('portfolio.html')" class="item">Portfólio</span></li>
+            <li class="item-caixa box-items"><span onclick="transicaoPagina('contato.html')" class="item">Contato</span></li>
         </ul>
     </nav>
 
@@ -47,7 +48,7 @@
             </div>
 
             <div class="caixas box-grow" id="perfil"> <!-- Foto + Nome -->
-                <img src="https://tinyurl.com/XCGHqeKWVnsG4rU4sggNUXXQhW9S" alt="Foto de perfil" id="perfil-foto">
+                <img src="https://tinyurl.com/XCGHqeKWVnsG4rU4sggNUXXQhW9SmS" alt="Foto de perfil" id="perfil-foto">
                 <div id="perfil-nome">Guilherme Oliveira</div>
             </div>
 
